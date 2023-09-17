@@ -1,0 +1,23 @@
+html{
+  background-color: #EFF2F9;
+  color: black;
+  font-style: Campton;
+}
+
+.contador {
+  display: block;
+  padding: 10px;
+}
+.count {
+  text-align: center;
+  font-size: 80px;
+}
+button {
+  padding: 4%;
+  margin: 5%;
+  background-color: #E4EBF1;
+  border-radius: 10px;
+  border: none;
+  box-shadow: -5px -5px 10px #FAFBFF,
+    5px 5px 10px #161B1D23;
+}
