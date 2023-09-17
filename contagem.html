@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pt-br"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="styles.css"> 
+  <title>Contagem</title> 
+ <style type="text/css" id="dcoder_stylesheet">html{
+  background-color: #EFF2F9;
+  color: black;
+  font-style: Campton;
+}
+
+.contador {
+  display: block;
+  padding: 10px;
+}
+.count {
+  text-align: center;
+  font-size: 80px;
+}
+button {
+  padding: 4%;
+  margin: 5%;
+  background-color: #E4EBF1;
+  border-radius: 10px;
+  border: none;
+  box-shadow: -5px -5px 10px #FAFBFF,
+    5px 5px 10px #161B1D23;
+}</style></head> 
+ <body> 
+  <main> 
+   <div class="contador"> 
+    <p class="count">0</p> 
+    <br> <button class="diminuir">Diminuir</button> <button class="resetar">Resetar</button> <button class="adicionar">Adicionar</button> 
+   </div> 
+  </main> 
+  <script src="index.js"></script> 
+ 
+<script type="text/javascript" id="dcoder_script">let count = 0;
+let fundo = document.querySelector("html");
+
+
+
+document.querySelector(".diminuir").onclick =
+   () => {
+  count -= 1;
+  document.querySelector(".count").innerHTML = count;
+}
+document.querySelector(".resetar").onclick = 
+  () => {
+  count = 0;
+  document.querySelector(".count"). innerHTML = count;
+}
+document.querySelector(".adicionar").onclick =
+   () => {
+  count += 1;
+  document.querySelector(".count").innerHTML = count;
+}</script></body></html>
